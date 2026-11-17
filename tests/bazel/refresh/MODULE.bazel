@@ -1,6 +1,6 @@
 module(name = "snmp_test_service_lock")
 
-bazel_dep(name = "rules_distroless", version = "0.9.4.sonic.13")
+bazel_dep(name = "rules_distroless", version = "0.9.4.sonic.20")
 
 apt = use_extension("@rules_distroless//apt:extensions.bzl", "apt")
 apt.sources_list(
