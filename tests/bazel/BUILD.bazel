@@ -31,6 +31,7 @@ sh_test(
     timeout = "long",
     srcs = ["@sonic_swss_common//tools/bazel/runtime:run_with_runtime.py"],
     args = [
+        "$(rootpath @patchelf//:patchelf)",
         "$(rootpath @sonic_swss_common//tools/bazel/runtime:test_runtime)",
         "-",
         "enabled",
@@ -39,6 +40,7 @@ sh_test(
     ],
     data = [
         ":unit_runner",
+        "@patchelf//:patchelf",
         "@sonic_snmpagent//:setup.py",
         "@sonic_snmpagent//:test_sources",
         "@sonic_swss_common//tools/bazel/runtime:test_runtime",
@@ -74,6 +76,7 @@ sh_test(
     size = "medium",
     srcs = ["@sonic_swss_common//tools/bazel/runtime:run_with_runtime.py"],
     args = [
+        "$(rootpath @patchelf//:patchelf)",
         "$(rootpath :service_runtime)",
         "-",
         "enabled",
@@ -86,6 +89,7 @@ sh_test(
     data = [
         ":installed_wheel_runner",
         ":service_runtime",
+        "@patchelf//:patchelf",
         "@sonic_buildimage//src/sonic-py-common:sonic_py_common_wheel",
         "@sonic_snmpagent//:setup.py",
         "@sonic_snmpagent//:snmp_install",
