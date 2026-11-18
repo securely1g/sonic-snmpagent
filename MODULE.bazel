@@ -1,6 +1,6 @@
 module(
     name = "sonic-snmpagent",
-    version = "2.1.0",
+    version = "2.1.1",
     bazel_compatibility = [
         ">=8.5.1",
         "<=8.5.1",
