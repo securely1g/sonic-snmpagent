@@ -56,7 +56,7 @@ single_version_override(
     version = "0.0.5-dd364f207d7b320a5af12c81da6d10893f292205",
 )
 
-bazel_dep(name = "rules_python", version = "1.9.0.sonic.1")
+bazel_dep(name = "rules_python", version = "1.9.0.sonic.2")
 bazel_dep(name = "rules_shell", version = "0.8.0")
 bazel_dep(name = "patchelf", version = "0.18.0.bcr.1")
 bazel_dep(name = "platforms", version = "1.1.0")
