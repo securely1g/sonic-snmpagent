@@ -90,7 +90,7 @@ rust.toolchain(versions = [])
 bazel_dep(name = "bazel_lib", version = "3.2.2")
 bazel_dep(name = "bazel_skylib", version = "1.9.2")
 bazel_dep(name = "rules_cc", version = "0.2.20")
-bazel_dep(name = "rules_distroless", version = "0.9.4.sonic.25")
+bazel_dep(name = "rules_distroless", version = "0.9.4.sonic.26")
 
 apt = use_extension("@rules_distroless//apt:extensions.bzl", "apt")
 apt.import_lock(lock = "@sonic_build_infra//apt:apt.lock.json", fallback = True)
